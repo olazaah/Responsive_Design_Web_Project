@@ -1,0 +1,142 @@
+/* Global View */
+body{
+    font-family: 'Asap', sans-serif;
+    color: cornsilk;
+    background-color: #EBEBEB;
+}
+
+a{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.header-container{
+    background-color: rgb(51, 47, 47);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight{
+    font-weight: 700;
+}
+
+.mybutton{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.col{
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: coral;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.mob-wrapper{
+    display: none;
+    padding-right: 15px;
+}
+
+/* Tablet View */
+@media (max-width: 768px){
+    .col{
+        width: 45%;
+    }
+    .hide-desktop-only{
+        display: block;
+    }
+    /* header{
+        display: block;
+        text-align: center;
+    } */
+
+    nav{
+        display: none;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .container{
+        padding-top: 20px;
+    }
+
+    .logo{
+        padding: 40px 0;
+    }
+
+    .mybutton{
+        margin-left: 0;
+    }
+    .header-container{
+        position: relative;
+    }
+
+    .mob-wrapper{
+        display: block;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 5px;
+    }
+    
+    .navbutton{
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -75px;
+        text-align: center;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 508px){
+    .col{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
